@@ -6,41 +6,35 @@ import { Dropdown } from "@/components/Dropdown";
 const Navbar = () => {
   return (
     <>
-      {/* <div className="flex justify-between my-8">
-        <img src={Logo} alt="logo" />
-        <div className="flex gap-12 items-center">
-          <Link to="/" className="hover:underline">
-            Home
+      <div className="lg:block hidden">
+        <div className="flex justify-between my-8">
+          <Link to="/">
+            <img src={Logo} alt="logo" />
           </Link>
-          <Link to="/browseFields" className="hover:underline">
-            Browse Fields
-          </Link>
-          <Link to="/about" className="hover:underline">
-            About Us
-          </Link>
-          <Button asChild>
-            <Link to="/login">Login</Link>
-          </Button>
+          <div className="flex gap-12 items-center">
+            <Link to="/" className="hover:underline">
+              Home
+            </Link>
+            <Link to="/browseFields" className="hover:underline">
+              Browse Fields
+            </Link>
+            <Link to="/about" className="hover:underline">
+              About Us
+            </Link>
+            <Button asChild>
+              <Link to="/login">Login</Link>
+            </Button>
+          </div>
         </div>
-      </div> */}
-      <div className="flex justify-between my-8">
-        <img src={Logo} alt="logo" />
+      </div>
 
-        <Dropdown/>
-        {/* <div className="flex gap-12 items-center">
-          <Link to="/" className="hover:underline">
-            Home
+      <div className="block lg:hidden">
+        <div className="flex justify-between my-8">
+          <Link to="/">
+            <img src={Logo} alt="logo" />
           </Link>
-          <Link to="/browseFields" className="hover:underline">
-            Browse Fields
-          </Link>
-          <Link to="/about" className="hover:underline">
-            About Us
-          </Link>
-          <Button asChild>
-            <Link to="/login">Login</Link>
-          </Button>
-        </div> */}
+          <Dropdown />
+        </div>
       </div>
     </>
   );

@@ -5,7 +5,7 @@ import Tutorials from "@/components/Tutorials";
 
 const Home = () => {
   return (
-    <div className="space-y-32">
+    <div className="space-y-40 lg:space-y-32">
       <Hero />
       <Featured />
       <Tutorials />
