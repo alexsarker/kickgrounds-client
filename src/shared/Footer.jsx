@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-900 p-14 mt-12">
+    <div className="bg-slate-900 p-14 mt-36">
       <img src={Logo} alt="logo" className="mx-auto" />
       <div className="flex flex-wrap gap-12 justify-center text-white pt-9">
         <Link to="" className="hover:underline">

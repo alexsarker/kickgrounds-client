@@ -1,5 +1,6 @@
 import Featured from "@/components/Featured";
 import Hero from "@/components/Hero";
+import JoinBanner from "@/components/JoinBanner";
 import Tutorials from "@/components/Tutorials";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <Featured />
       <Tutorials />
+      <JoinBanner />
     </div>
   );
 };
